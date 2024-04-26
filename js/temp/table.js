@@ -32,6 +32,4 @@ export let isiTabel =
         </svg>
     </th>
 </tr>
-
-
 `
