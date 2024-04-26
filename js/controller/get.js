@@ -12,9 +12,9 @@ function isiRow(value) {
             .replace("#LOKASI#", value.location)
             .replace("#STATUS#", value.checkin)
             .replace("#HARIKERJA#", value.biodata.hari_kerja)
-            .replace("#JAMKERJA#", value.biodata.jam_kerja.object.durasi)
-            .replace("#JAMMASUK#", value.biodata.jam_kerja.object.jam_masuk)
-            .replace("#JAMKELUAR#", value.biodata.jam_kerja.object.jam_keluar)
+            .replace("#JAMKERJA#", value.biodata.jam_kerja[0].durasi)
+            .replace("#JAMMASUK#", value.biodata.jam_kerja[0].jam_masuk)
+            .replace("#JAMKELUAR#", value.biodata.jam_kerja[0].jam_keluar)
             .replace("#WARNA#", getRandomColor())
             .replace(/#WARNALOGO#/g, getRandomColorName());
     addInner("iniTabel", content);
